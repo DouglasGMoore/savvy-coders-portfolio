@@ -5,6 +5,9 @@
 **_Hello, My name is Douglas. I am a junior web developer. I really like HTML and CSS, but I Love JavaScript. 
 I especially enjoy learning and working with the many frameworks of JavaScript._**
 
+## Fun Fact
+**_I like pi_**
+
 ## Languages
 - HTML
 - CSS
