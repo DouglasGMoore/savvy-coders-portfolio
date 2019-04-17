@@ -1,0 +1,24 @@
+{
+  "name": "DouglasMoore",
+  "version": "1.0.0",
+  "description": "![Profile Picture](https://media.licdn.com/dms/image/C4E03AQHxh6mjKH2ntQ/profile-displayphoto-shrink_200_200/0?e=1560988800&v=beta&t=XAITgXEoPFYCo3N12WrzomA1n4GuIenTb-AhW1-99Vc)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dozenji/savvy-coders-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dozenji/savvy-coders-portfolio/issues"
+  },
+  "homepage": "https://github.com/dozenji/savvy-coders-portfolio#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "parcel-bundler": "^1.12.3"
+  }
+}
