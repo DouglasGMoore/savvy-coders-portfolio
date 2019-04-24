@@ -1,5 +1,6 @@
 body{
-  test-align: center;
+  text-align: center;
+  max-width: 960px;
 }
 li{
   list-style: none;
@@ -21,6 +22,7 @@ nav li{
   margin: 0 10px;
 }
 nav{
+  position: fixed;
   max-width: 800px;
 }
 #dropdown{
