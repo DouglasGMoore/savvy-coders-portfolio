@@ -1,7 +1,5 @@
-html{
-  font-family: 'Roboto', sans-serif;
-}
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   max-width: 960px;
   width: 80vw;
@@ -14,7 +12,6 @@ h1 {
 header {
   margin-top: 70px;
   font-size: 24px;
-  height: 300px;
   color: Blue;
 }
 ul {
