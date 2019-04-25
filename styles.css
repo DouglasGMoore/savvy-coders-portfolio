@@ -47,10 +47,6 @@ a:visited{
 figure{
   float: left;
 }
-figcaption{
-  float: left;
-  
-}
 
 /* Form */
 input {
