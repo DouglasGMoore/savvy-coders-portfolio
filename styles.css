@@ -44,6 +44,13 @@ a:visited{
 .justify-space-between {
   justify-content: space-between;
 }
+figure{
+  float: left;
+}
+figcaption{
+  float: left;
+  
+}
 
 /* Form */
 input {
