@@ -438,7 +438,7 @@ label{
   border-radius: 50%;
   z-index: -2;
 }
-@media screen and (min-width: 480px){
+@media screen and (max-width: 960px){
   .flex--sm{
     display: none;
   }
