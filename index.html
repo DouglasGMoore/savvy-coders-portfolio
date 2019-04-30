@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Douglas's Portfolio</title>
   </head>
-  <body>
+  <body >
+      
     <div class="container">
+        <div id = "greeting"></div>
       <div class="header">
         <nav>
            <ul>
@@ -33,6 +35,7 @@
            </ul>
         </nav>
       </div>
+      
       <div class="left flex--sm">
         <div class="cell">
           <div class="cloud"></div>
@@ -67,5 +70,14 @@
         <span><a class="codewars" href="https://www.codewars.com/users/dugMower"><img src="https://www.codewars.com/users/dugMower/badges/small" ></a></span>
         <span><a class="red" href="mailto: douglasg.moore@gmail.com"><i class="far fa-envelope-open"></i></a></span>
         </div>
+        <script>
+          let name = prompt("Hi there! What's your name?");
+          
+          if (name === "") {
+            name = prompt("Hi there! What's your name?");
+          }
+          let output = document.querySelector("#greeting");
+          output.textContent = "Thanks for visiting, " + name + ".";
+        </script>
   </body>
 </html>
