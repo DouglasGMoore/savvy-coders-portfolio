@@ -14,9 +14,9 @@
     <title>Douglas's Portfolio</title>
   </head>
   <body >
-      
+      <div id = "greeting"></div> 
     <div class="container">
-        <div id = "greeting"></div>
+        
       <div class="header">
         <nav>
            <ul>
@@ -71,12 +71,19 @@
         <span><a class="red" href="mailto: douglasg.moore@gmail.com"><i class="far fa-envelope-open"></i></a></span>
         </div>
         <script>
-          let name = prompt("Hi there! What's your name?");
-          
-          if (name === "") {
-            name = prompt("Hi there! What's your name?");
+          /*function to error check name*/
+          let name = prompt("what is your name?")
+          function errorCheck() {
+            if (name === "") {
+              name = prompt("no really,  What's your name?"); 
+            }
           }
+        
+
+          /*check for valid name entry*/
+          errorCheck();
           let output = document.querySelector("#greeting");
+
           output.textContent = "Thanks for visiting, " + name + ".";
         </script>
   </body>
