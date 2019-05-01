@@ -15,7 +15,7 @@ function errorCheck(name){
 /* capture what is returned by checkname and return that value*/
 name = errorCheck(name);
 
-let output = document.querySelectorAll();
+let output = document.querySelector('#greeting');
 
 output.textContent = 'Thanks for visiting, ' + name + '.';
 /* Functional Expression
