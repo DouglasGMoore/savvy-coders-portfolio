@@ -71,20 +71,24 @@
         <span><a class="red" href="mailto: douglasg.moore@gmail.com"><i class="far fa-envelope-open"></i></a></span>
         </div>
         <script>
-          /*function to error check name*/
+          /*collect global variable*/
           let name = prompt("what is your name?")
-          function errorCheck() {
+
+          /*function to error check name*/
+          function errorCheck(nombre) {
             if (name === "") {
-              name = prompt("no really,  What's your name?"); 
-            }
+              name = prompt("no really,  What's your name?");   
+            } 
+            return name;
           }
-        
+          /*capture what is returned by checkname and return that value*/
+          name = errorCheck(name);
 
-          /*check for valid name entry*/
-          errorCheck();
           let output = document.querySelector("#greeting");
-
           output.textContent = "Thanks for visiting, " + name + ".";
+          /*Functional Expression
+          let errorCheck = function (){};
+          */
         </script>
   </body>
 </html>
