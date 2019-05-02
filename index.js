@@ -4,3 +4,10 @@ import Main from './Main';
 import Footer from './Footer';
 
 console.log(Navigation, Animation, Main, Footer)
+
+document.body.innerHTML = `
+${Navigation}
+${Cntent}
+${Main}
+${Footer}
+`;
