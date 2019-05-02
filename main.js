@@ -16,9 +16,11 @@ function checkName(name){
 /* capture what is returned by checkname and return that value*/
 name = checkName(name);
 
-let output = document.querySelector('h1');
+let output = document.querySelector('#greeting');
 
-output.textContent = 'Thanks for visiting, ' + name + '.';
+output.innerHTML = `${name}`;
+// output.textContent = `<p>${name}</p>`;
+
 /* Functional Expression
           let errorCheck = function (){};
           */
