@@ -1,12 +1,8 @@
-<<<<<<< HEAD
 export default `
 <div class="container">
 <div class="header">
-          
-<nav>       
-=======
-export default `<nav>
->>>>>>> 0865bebdbd807534d2c26af14b0fa30b7494cf3b
+
+<nav>
 <ul>
  <li class="portfolio"><a href="portfolio.html">Portfolio</a>
      <ul id="dropdown">
@@ -22,8 +18,4 @@ export default `<nav>
  <li class="about"><a class="about" href="about.html">About Me</a></li>
 </ul>
 </nav>
-<<<<<<< HEAD
-</div>
-=======
->>>>>>> 0865bebdbd807534d2c26af14b0fa30b7494cf3b
 `;
