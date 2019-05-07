@@ -4,6 +4,7 @@
   "description": "![Profile Picture](https://media.licdn.com/dms/image/C4E03AQHxh6mjKH2ntQ/profile-displayphoto-shrink_200_200/0?e=1560988800&v=beta&t=XAITgXEoPFYCo3N12WrzomA1n4GuIenTb-AhW1-99Vc)",
   "main": "index.js",
   "scripts": {
+    "build": "parcel build index.html && cp _redirects ./dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
