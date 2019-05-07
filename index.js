@@ -3,10 +3,19 @@ import Animation from './components/Animation';
 import Main from './components/Main';
 import Footer from './components/Footer';
 
-document.querySelector('#root').innerHTML = 
+const state = {};
+
+state.welcome = 'Welcome';
+state.title = 'My Portfolio';
+console.log(state);
+
+
+document.querySelector('#root').innerHTML =
 `
-${Navigation}
-${Main}
-${Animation}
-${Footer}
+${Navigation(state)}
+${Main(state)}
+${Animation(state)}
+${Footer(state)}
 `;
+
+
