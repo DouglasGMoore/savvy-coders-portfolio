@@ -3,6 +3,7 @@ import Animation from './components/Animation';
 import Main from './components/Main';
 import Footer from './components/Footer';
 
+
 const state = {};
 
 state.welcome = 'Welcome';
@@ -18,4 +19,6 @@ ${Animation(state)}
 ${Footer(state)}
 `;
 
+let x = document.getElementsByClassName('html');
 
+console.log(x);
