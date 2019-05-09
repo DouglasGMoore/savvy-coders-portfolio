@@ -1,5 +1,4 @@
-export default function Animation(){
-    return `
+export default () => `
 <div class="left flex--sm">
   <div class="cell">
     <div class="cloud"></div>
@@ -19,4 +18,4 @@ export default function Animation(){
   </div>
 
   </div>`;
-}
+
