@@ -14,8 +14,8 @@ export default () => `
        </ul>
    </li>
    <li class="welcome"><a class="welcome"href="index.html">Welcome</a></li>
-   <li class="contact"><a class="contact" href="contact.html">Contact Me</a></li>
-   <li class="about"><a class="about" href="about.html">About Me</a></li>
+   <li class="contact"><a class="contact" href="contact.html">Contact</a></li>
+   <li class="about"><a class="about" href="about.html">About</a></li>
   </ul>
   </nav>
   </div>
