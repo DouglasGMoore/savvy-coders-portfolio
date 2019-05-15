@@ -6,22 +6,30 @@ import Footer from './components/Footer';
 
 const states =  {
     'welcome': {
-        'title': 'Fuck YOu!'
+        'title': 'Welcome!',
+        'links': [ 'Welcome','About', 'Contact', 'Portfolio' ],
     },
     'contact': {
-        'title': 'Contact Me'
+        'title': 'Contact Me',
+        'links': [ 'Welcome', 'About', 'Contact', 'Portfolio' ],
     },
     'portfolio': {
-        'title': 'welcome to my portfolio'
+        'title': 'welcome to my portfolio',
+        'links': [ 'Welcome', 'About', 'Contact', 'Portfolio' ],
+
     },
     'about': {
-        'title': 'About me'
+        'title': 'About me',
+        'links': [ 'Welcome', 'About', 'Contact', 'Portfolio' ],
+
+
     }
 };
 
 const root = document.querySelector('#root');
 
 function render(state){
+    console.log(state);
     root.innerHTML = `
     ${Navigation(state)}
     ${Main(state)}
