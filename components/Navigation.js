@@ -1,21 +1,29 @@
-export default () => `
+function buildNavHTML(stateLinks){
+    let linksHTML = '';
+
+    stateLinks.forEach((link) => {
+        linksHTML += `<li><a href ="">${link}</a></li>`;
+    });
+
+    return linksHTML;
+}
+
+export default (state) => `
 <div class="container">
   <div class="header">
 
   <nav>
   <ul>
-   <li class="portfolio"><a href="portfolio.html">Portfolio</a>
+   <li class="portfolio"><a href="portfolio.html">${state.links[3]}</a>
        <ul id="dropdown">
-           <li><a href="portfolio.html">HTML/CSS</a></li>
-           <li><a href="portfolio.html">JavaScript</a></li>
-           <li><a href="DemoDay.html">Class Showcase</a></li>
+           <li><a href="portfolio.html">${state.links[3]}</a></li>
+           <li><a href="portfolio.html">${state.links[3]}</a></li>
+           <li><a href="DemoDay.html"></a></li>
            <li><a href="DemoDay.html">Web Store</a></li>
            <li><a href="DemoDay.html">Demo Day Project</a></li>
        </ul>
    </li>
-   <li class="welcome"><a class="welcome"href="index.html">Welcome</a></li>
-   <li class="contact"><a class="contact" href="contact.html">Contact</a></li>
-   <li class="about"><a class="about" href="about.html">About</a></li>
+   ${buildNavHTML(state.links)}
   </ul>
   </nav>
   </div>
