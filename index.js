@@ -1,6 +1,6 @@
 
 import Navigation from './components/Navigation';
-import Animation from './components/Animation';
+// import Animation from './components/Animation';
 import Main from './components/Main';
 import Footer from './components/Footer';
 
@@ -29,11 +29,9 @@ const states =  {
 const root = document.querySelector('#root');
 
 function render(state){
-    console.log(state);
     root.innerHTML = `
     ${Navigation(state)}
     ${Main(state)}
-    ${Animation(state)}
     ${Footer(state)}
 `;
 }
