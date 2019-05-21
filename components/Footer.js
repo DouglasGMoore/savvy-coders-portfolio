@@ -1,3 +1,5 @@
+
+
 export default  () =>
     `<div class="footer">
 <div class="tmark">&copy:2019 D. Moore</div>

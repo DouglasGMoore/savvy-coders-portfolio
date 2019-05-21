@@ -3,6 +3,7 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 import * as states from './store';
 
+
 const root = document.querySelector('#root');
 
 function render(state){
