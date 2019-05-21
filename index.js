@@ -20,15 +20,16 @@ function render(state){
     ${Footer(state)}
 `;
 
-    const links = document.querySelectorAll('nav a');
+    router.updatePageLinks();
 
-    links.forEach((link) => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault();
-            render(states[`${event.target.closest('nav a').textContent}`]);
-        });
-    });
+//     links.forEach((link) => {
+//         link.addEventListener('click', (event) => {
+//             event.preventDefault();
+//             render(states[`${event.target.closest('nav a').textContent}`]);
+//         });
+//     });
 }
+
 
 function  handleRoutes(params){
     render(capitalize(params.path));
