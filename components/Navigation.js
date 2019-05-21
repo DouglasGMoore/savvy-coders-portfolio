@@ -1,10 +1,17 @@
+function buildIconHTML(link){
+if(link.icon){
+    return `<span class="${link.icon}"></span>`;
+} else
 
+return '';
+
+};
 
 function buildNavHTML(stateLinks){
     let linksHTML = '';
 
     stateLinks.forEach((link) => {
-        linksHTML += `<li><a href ="">${link.text}</a></li>`;
+    linksHTML += `<li><a href ="">${buildIconHTML(link)}${link.text}</a></li>`;
     });
 
 
