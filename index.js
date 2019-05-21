@@ -1,7 +1,14 @@
 import Navigation from './components/Navigation';
 import Main from './components/Main';
 import Footer from './components/Footer';
+
 import * as states from './store';
+
+import { capitalize } from 'lodash';
+import Navigo from 'navigo';
+
+// router is required to help our router handle localhost addresses
+const router = new Navigo(window.location.origin);
 
 
 const root = document.querySelector('#root');
@@ -23,4 +30,11 @@ function render(state){
     });
 }
 
-render(states.Welcome);
+function  handleRoutes(params){
+    render(capitalize(params.path));
+}
+
+router
+    .on(':path', handleRoutes)
+    .on('/', () => render(states.Welcome))
+    .resolve();
