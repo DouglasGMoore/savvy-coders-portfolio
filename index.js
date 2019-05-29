@@ -32,7 +32,7 @@ function render(state){
 
 
 function  handleRoutes(params){
-    render(capitalize(params.path));
+    render(states[capitalize(params.path)]);
 }
 
 router

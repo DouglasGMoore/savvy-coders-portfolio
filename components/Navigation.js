@@ -1,22 +1,38 @@
 function buildIconHTML(link){
-if(link.icon){
-    return `<span class="${link.icon}"></span>`;
-} return '';
+    if(link.icon){
+        return `<span class="${link.icon}"></span>`;
+    }
 
-};
-
-function buildNavHTML(stateLinks){
-    let linksHTML = '';
-
-    stateLinks.forEach((link) => {
-        linksHTML += `<li><a href ="/>${link.text.toLowerCase()}" data-navigo>${buildIconHTML(link)}${link.text}</a></li>`;
-    });
-
-
-    return linksHTML;
+    return '';
 }
 
-export default (state) => `
+// function buildNavHTML(stateLinks){
+//     let linksHTML = '';
+
+//     stateLinks.map((link) => {
+//         linksHTML += `<li><a href ="/${link.text.toLowerCase()}" data-navigo>${buildIconHTML(
+//             link
+//         )}${link.text}</a></li>`;
+//     });
+
+//     return linksHTML;
+// }
+function buildNavHTML(stateLinks){
+    return stateLinks
+        .map(
+            (link) =>
+                `<li><a href="/${link.text.toLowerCase()}" data-navigo>${buildIconHTML(
+                    link
+                )}${link.text}</a></li>`
+        )
+        .join(' ');
+}
+
+
+export default (state) => {
+    console.log(state);
+
+    return `
 <div class="container">
   <div class="header">
   <nav>
@@ -30,4 +46,6 @@ export default (state) => `
   </ul>
   </nav>
   </div>
+
 `;
+};
