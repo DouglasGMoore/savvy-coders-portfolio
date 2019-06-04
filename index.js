@@ -6,6 +6,7 @@ import * as states from './store';
 
 import { capitalize } from 'lodash';
 import Navigo from 'navigo';
+import axios from 'axios';
 
 // router is required to help our router handle localhost addresses
 const router = new Navigo(window.location.origin);
@@ -22,6 +23,10 @@ function render(state){
 
     router.updatePageLinks();
 
+
+    // grab the posts from the data, and iterate over them
+    // p
+
 //     links.forEach((link) => {
 //         link.addEventListener('click', (event) => {
 //             event.preventDefault();
@@ -36,6 +41,19 @@ function  handleRoutes(params){
 }
 
 router
-    .on(':path', handleRoutes)
+    .on(':path', (handleRoutes))
     .on('/', () => render(states.Welcome))
     .resolve();
+
+axios
+    .get('https://jsonplaceholder.typicode.com/posts')
+    .then((response) => {
+        console.log('before each');
+        response.data.forEach((post) => states.Blog.posts.push(post));
+        if(router.lastRouteResolved().params && router.lastRouteResolved().params.path === 'blog'){
+            render(states.Blog);
+            console.log(states);
+        }
+    });
+
+

@@ -29,10 +29,7 @@ function buildNavHTML(stateLinks){
 }
 
 
-export default (state) => {
-    console.log(state);
-
-    return `
+export default (state) => `
 <div class="container">
   <div class="header">
   <nav>
@@ -48,4 +45,3 @@ export default (state) => {
   </div>
 
 `;
-};
